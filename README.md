@@ -1,8 +1,6 @@
 # Team-4
 
-wisam is in.
+Välkommen till Tasty Tales!
 
-Elin är länkad 😊
-
-Rickard reporting for duty 🫡
-rickard-branch test
+Detta är ett projekt för oss i Team 4 där vi använder oss av Vue.
+Vi är en recept sida med massor av olika recept från alla världens hörn!
