@@ -8,12 +8,9 @@ import HeroSection from '../src/components/HeroSection.vue'
 
 <template>
   <NavBar />
-
-  <RouterView />
-  <FooterLast />
-
   <HeroSection />
   <RouterView />
+  <FooterLast />
 </template>
 
 <style scoped></style>
