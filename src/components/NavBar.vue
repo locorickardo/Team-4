@@ -21,6 +21,9 @@
           <li class="nav-item">
             <RouterLink class="nav-link" to="/about">Recept</RouterLink>
           </li>
+          <li class="nav-item">
+            <RouterLink class="nav-link" to="/favorit">Favorit</RouterLink>
+          </li>
         </ul>
         <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
