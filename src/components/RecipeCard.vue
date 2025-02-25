@@ -87,7 +87,7 @@ defineProps({
 
 .recipe-info .fa-clock {
     margin-right: 5px;
-    color: #85A33E;
+    color: black;
 }
 
 .recipe-time {
