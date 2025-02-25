@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Taste Tales</a>
+      <a class="navbar-brand" href="#">Tasty Tales</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -19,10 +19,10 @@
             <RouterLink class="nav-link" aria-current="page" to="/">Home</RouterLink>
           </li>
           <li class="nav-item">
-            <RouterLink class="nav-link" to="/about">Recept</RouterLink>
+            <RouterLink class="nav-link" to="/about">Recepies</RouterLink>
           </li>
           <li class="nav-item">
-            <RouterLink class="nav-link" to="/favorit">Favorit</RouterLink>
+            <RouterLink class="nav-link" to="/favorit">Favourites</RouterLink>
           </li>
         </ul>
         <form class="d-flex" role="search">
