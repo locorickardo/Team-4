@@ -19,10 +19,10 @@
             <RouterLink class="nav-link" aria-current="page" to="/">Home</RouterLink>
           </li>
           <li class="nav-item">
-            <RouterLink class="nav-link" to="/about">Recepies</RouterLink>
+            <RouterLink class="nav-link" to="/recepies">Recepies</RouterLink>
           </li>
           <li class="nav-item">
-            <RouterLink class="nav-link" to="/favorit">Favourites</RouterLink>
+            <RouterLink class="nav-link" to="/favourites">Favourites</RouterLink>
           </li>
         </ul>
         <form class="d-flex" role="search">
