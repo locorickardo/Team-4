@@ -18,10 +18,10 @@
         </div>
       </div>
 
-      <!-- Social Media Icons and Contact Info -->
+      <!-- Social Media Icons -->
       <div class="social-icons mb-3">
         <a href="https://twitter.com" target="_blank" class="social-icon x">
-          <i class="fab fa-twitter"></i> <!-- Test Twitter Icon -->
+          <i class="fab fa-twitter"></i> <!-- Twitter Icon -->
         </a>
         <a href="https://www.instagram.com" target="_blank" class="social-icon instagram">
           <i class="fab fa-instagram"></i> <!-- Instagram Icon -->
@@ -33,8 +33,6 @@
           <i class="fab fa-tiktok"></i> <!-- TikTok Icon -->
         </a>
       </div>
-
-
 
       <!-- Copyright Text -->
       <small class="text-white-50 d-block mt-3">copyright &copy; Tasty Tales</small>
@@ -85,6 +83,7 @@
   color: #BEC09C !important;
 }
 
+/* Contact Info */
 .contact-info {
   display: flex;
   justify-content: center;
@@ -93,6 +92,13 @@
   font-size: 18px;
   gap: 40px;
   margin-top: 1.5rem;
+}
+
+.contact-info .phone,
+.contact-info .email {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contact-label {
@@ -110,5 +116,12 @@
   font-weight: 400;
   font-size: 18px;
   color: #BEC09C !important;
+}
+
+@media (max-width: 768px) {
+  .contact-info {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
     <div class="card">
-        <img src="../assets/img/Placeholder_Card_Image_1.png" alt="Recipe Image" class="recipe-image" />
+        <img :src="image" alt="Recipe Image" class="recipe-image" />
         <div class="card-content">
             <h6 class="recipe-title">{{ title }}</h6>
             <div class="line-break"></div>
@@ -25,6 +25,10 @@ defineProps({
         type: String,
         default: '25',
     },
+    image: {
+        type: String,
+        required: true,  // Ensure the image is passed
+    }
 });
 </script>
 
