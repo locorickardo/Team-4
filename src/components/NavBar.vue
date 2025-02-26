@@ -2,7 +2,7 @@
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
       <a class="navbar-brand" href="/"
-        ><img class="logo" src="/src/assets/imge/Tasty Tales.png" alt=""
+        ><img class="logo" src="/src/assets/img/Tasty Tales.png" alt=""
       /></a>
       <button
         class="navbar-toggler"
