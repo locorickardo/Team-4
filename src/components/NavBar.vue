@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top p-0">
     <div class="container-fluid">
       <a class="navbar-brand" href="/"
         ><img class="logo" src="/src/assets/img/Tasty Tales.png" alt=""
@@ -21,7 +21,7 @@
             <RouterLink class="nav-link" aria-current="page" to="/">Home</RouterLink>
           </li>
           <li class="nav-item">
-            <RouterLink class="nav-link" to="/about">Recept</RouterLink>
+            <RouterLink class="nav-link" to="/recept">Recept</RouterLink>
           </li>
           <li class="nav-item">
             <RouterLink class="nav-link" to="/favorit">Favorit</RouterLink>
