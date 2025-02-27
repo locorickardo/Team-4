@@ -1,5 +1,5 @@
 <script setup></script>
 <template>
-  <div>Favorit</div>
+  <div>Recepies</div>
 </template>
 <style scoped></style>
