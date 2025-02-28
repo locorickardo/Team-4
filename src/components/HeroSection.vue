@@ -1,7 +1,6 @@
-<script setup></script>
 <template>
-  <div class="container-fluid mt-5 pt-5">
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel ">
+  <div class="carousel-wrapper">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button
           type="button"
@@ -26,21 +25,21 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="../assets/img/Hero_Food_1.png" class="d-block w-100" alt="..." />
+          <img src="../assets/img/Hero_Food_1.png" class="d-block" alt="..." />
           <div class="carousel-caption d-none d-md-block">
             <h5>Recept 1</h5>
             <p>Kort beskrivning</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="../assets/img/Hero_Food_2.png" class="d-block w-100" alt="..." />
+          <img src="../assets/img/Hero_Food_2.png" class="d-block" alt="..." />
           <div class="carousel-caption d-none d-md-block">
             <h5>Recept 2</h5>
             <p>Kort beskrivning</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="../assets/img/Hero_Food_3.png" class="d-block w-100" alt="..." />
+          <img src="../assets/img/Hero_Food_3.png" class="d-block" alt="..." />
           <div class="carousel-caption d-none d-md-block">
             <h5>Recept 3</h5>
             <p>Kort beskrivning</p>
@@ -68,4 +67,22 @@
     </div>
   </div>
 </template>
-<style scoped></style>
+
+<style scoped>
+.carousel-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.carousel-inner {
+  width: auto;
+  max-width: 1200px;
+}
+
+.carousel-item img {
+  width: 100%;
+  margin: 0 auto;
+}
+</style>
