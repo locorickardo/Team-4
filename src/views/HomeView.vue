@@ -3,14 +3,14 @@ import HeroSection from '@/components/HeroSection.vue'
 import RecipeCard from '@/components/RecipeCard.vue';
 
 const images = [
-  '../src/assets/img/Placeholder_1.jpeg',  // Image 1
-  '../src/assets/img/Placeholder_2.jpeg',  // Image 2
-  '../src/assets/img/Placeholder_3.jpeg',  // Image 3
-  '../src/assets/img/Placeholder_4.jpeg',  // Image 4
-  '../src/assets/img/Placeholder_5.jpeg',  // Image 5
-  '../src/assets/img/Placeholder_6.jpeg',  // Image 6
-  '../src/assets/img/Placeholder_7.jpeg',  // Image 7
-  '../src/assets/img/Placeholder_8.jpeg',  // Image 8
+  '../src/assets/img/Placeholder_1.jpeg',
+  '../src/assets/img/Placeholder_2.jpeg',
+  '../src/assets/img/Placeholder_3.jpeg',
+  '../src/assets/img/Placeholder_4.jpeg',
+  '../src/assets/img/Placeholder_5.jpeg',
+  '../src/assets/img/Placeholder_6.jpeg',
+  '../src/assets/img/Placeholder_7.jpeg',
+  '../src/assets/img/Placeholder_8.jpeg',
 ];
 </script>
 <template>
@@ -30,6 +30,22 @@ const images = [
   max-width: 1200px;
   margin: 0 auto;
   justify-items: center;
-  grid-template-rows: repeat(2, 381px);
+}
+
+.card {
+  width: 100%;
+  max-width: 284px;
+}
+
+@media (max-width: 768px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 </style>

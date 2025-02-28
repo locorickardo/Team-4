@@ -5,10 +5,12 @@
             <h6 class="recipe-title">{{ title }}</h6>
             <div class="line-break"></div>
             <div class="info-section">
-                <div class="recipe-rating">★★★★★</div>
                 <div class="recipe-info">
-                    <i class="fas fa-clock"></i>
-                    <span class="recipe-time">{{ time }} min</span>
+                    <div class="recipe-rating">★★★★★</div>
+                    <div class="recipe-time-container">
+                        <i class="fas fa-clock"></i>
+                        <span class="recipe-time">{{ time }} min</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -27,14 +29,15 @@ defineProps({
     },
     image: {
         type: String,
-        required: true,  // Ensure the image is passed
+        required: true,
     }
 });
 </script>
 
 <style scoped>
 .card {
-    width: 284px;
+    width: 100%;
+    max-width: 284px;
     height: 381px;
     border-radius: 12px;
     background-color: #f8f8f8;
@@ -79,24 +82,30 @@ defineProps({
     height: 100%;
 }
 
-.recipe-rating {
-    color: gold;
-    margin-bottom: 0px;
-}
-
 .recipe-info {
     display: flex;
     align-items: center;
+    gap: 10px;
+}
+
+.recipe-rating {
+    color: gold;
+    font-size: 20px;
 }
 
 .recipe-info .fa-clock {
-    margin-right: 5px;
     color: black;
 }
 
 .recipe-time {
     font-size: 14px;
     color: #666;
+}
+
+.recipe-time-container {
     margin-left: auto;
+    display: flex;
+    gap: 10px;
+    align-items: center;
 }
 </style>
