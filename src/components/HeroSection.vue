@@ -73,8 +73,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh;
-  margin-top: 170px;
 }
 
 .carousel-inner {
