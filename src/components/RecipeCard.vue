@@ -3,8 +3,8 @@
         <img :src="image" alt="Recipe Image" class="recipe-image" />
         <div class="card-content">
             <h6 class="recipe-title">{{ title }}</h6>
-            <div class="line-break"></div>
             <div class="info-section">
+                <div class="line-break"></div>
                 <div class="recipe-info">
                     <div class="recipe-rating">★★★★★</div>
                     <div class="recipe-time-container">
