@@ -60,7 +60,7 @@ function toggleFavorite() {
   border-radius: 12px;
   background-color: #f8f8f8;
   padding: 20px;
-  margin-top: 40px;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
