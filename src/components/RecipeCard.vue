@@ -1,6 +1,9 @@
 <template>
     <div class="card">
         <img :src="image" alt="Recipe Image" class="recipe-image" />
+        <button @click="toggleFavorite" class="favorite-button">
+            <i :class="['fa-heart', isFavorite ? 'fas' : 'far']"></i>
+        </button>
         <div class="card-content">
             <h6 class="recipe-title">{{ title }}</h6>
             <div class="info-section">
@@ -17,8 +20,12 @@
     </div>
 </template>
 
+
 <script setup>
-defineProps({
+import { computed } from 'vue'
+import { useFavoritesStore } from '@/stores/favorites'
+
+const props = defineProps({
     title: {
         type: String,
         default: 'Recipe Title',
@@ -30,8 +37,20 @@ defineProps({
     image: {
         type: String,
         required: true,
+    },
+})
+
+const favoritesStore = useFavoritesStore()
+
+const isFavorite = computed(() => favoritesStore.isFavorite(props.title))
+
+function toggleFavorite() {
+    if (isFavorite.value) {
+        favoritesStore.removeFavorite(props.title)
+    } else {
+        favoritesStore.addFavorite(props.title)
     }
-});
+}
 </script>
 
 <style scoped>
@@ -107,5 +126,34 @@ defineProps({
     display: flex;
     gap: 10px;
     align-items: center;
+}
+
+.favorite-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.favorite-button:hover {
+    background: rgba(255, 255, 255, 1);
+}
+
+.favorite-button i {
+    font-size: 24px;
+    color: grey;
+}
+
+.favorite-button i.fas {
+    color: red;
 }
 </style>
