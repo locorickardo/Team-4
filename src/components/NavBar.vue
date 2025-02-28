@@ -1,7 +1,9 @@
 <template>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top p-0">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Tasty Tales</a>
+      <a class="navbar-brand" href="/"
+        ><img class="logo" src="/src/assets/img/Tasty Tales.png" alt=""
+      /></a>
       <button
         class="navbar-toggler"
         type="button"
@@ -19,10 +21,10 @@
             <RouterLink class="nav-link" aria-current="page" to="/">Home</RouterLink>
           </li>
           <li class="nav-item">
-            <RouterLink class="nav-link" to="/recepies">Recepies</RouterLink>
+            <RouterLink class="nav-link" to="/recept">Recept</RouterLink>
           </li>
           <li class="nav-item">
-            <RouterLink class="nav-link" to="/favourites">Favourites</RouterLink>
+            <RouterLink class="nav-link" to="/favorit">Favorit</RouterLink>
           </li>
         </ul>
         <form class="d-flex" role="search">
