@@ -1,6 +1,6 @@
 <script setup>
 import HeroSection from '@/components/HeroSection.vue'
-import RecipeCard from '@/components/RecipeCard.vue';
+import RecipeCard from '@/components/RecipeCard.vue'
 
 const images = [
   '../src/assets/img/Placeholder_1.jpeg',
@@ -16,7 +16,7 @@ const images = [
 <template>
   <HeroSection />
   <div class="card-grid">
-    <RecipeCard v-for="(image, index) in images" :key="index" :title="'Recipe ' + (index + 1)" :time="25"
+    <RecipeCard v-for="(image, index) in images" :key="index" :title="'Recipe ' + (index + 1)" :time="'25'"
       :image="image" />
   </div>
 </template>
