@@ -74,6 +74,8 @@
   justify-content: center;
   align-items: center;
   height: 80vh;
+  margin-bottom: 60px;
+  margin-top: 170px;
 }
 
 .carousel-inner {
