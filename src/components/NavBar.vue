@@ -24,7 +24,7 @@
             <RouterLink class="nav-link" to="/recept">Recept</RouterLink>
           </li>
           <li class="nav-item">
-            <RouterLink class="nav-link" to="/favorit">Favorit</RouterLink>
+            <RouterLink class="nav-link" to="/favoriter">Mina Favoriter</RouterLink>
           </li>
         </ul>
         <form class="d-flex" role="search">
@@ -35,5 +35,5 @@
     </div>
   </nav>
 </template>
-<style scoped></style>
+<style></style>
 <script setup></script>
