@@ -9,7 +9,9 @@
       <div class="info-section">
         <div class="line-break"></div>
         <div class="recipe-info">
-          <div class="recipe-rating">★★★★★</div>
+          <div class="recipe-rating">
+            <StarRating v-model="rating" />
+          </div>
           <div class="recipe-time-container">
             <i class="fas fa-clock"></i>
             <span class="recipe-time">{{ time }} min</span>
@@ -23,6 +25,9 @@
 <script setup>
 import { computed } from 'vue'
 import { useFavoritesStore } from '@/stores/favorites'
+import { ref } from 'vue'
+import StarRating from './StarRating.vue'
+const rating = ref(0)
 
 const props = defineProps({
   title: {
@@ -109,7 +114,7 @@ function toggleFavorite() {
 
 .recipe-rating {
   color: gold;
-  font-size: 20px;
+  font-size: 10px;
 }
 
 .recipe-info .fa-clock {
