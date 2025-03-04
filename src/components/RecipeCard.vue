@@ -60,8 +60,8 @@ function toggleFavorite() {
   max-width: 284px;
   height: 381px;
   border-radius: 12px;
-  background-color: rgba(248, 248, 248, 0.8); /* Glass effect background */
-  backdrop-filter: blur(10px); /* Glass effect background */
+  background-color: rgba(248, 248, 248, 0.8);
+  backdrop-filter: blur(10px);
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -71,9 +71,9 @@ function toggleFavorite() {
 }
 
 .card.horizontal-layout {
-  max-width: 800px; /* Adjust the width to make the card longer */
-  height: 200px; /* Adjust the height to make the card shorter */
-  flex-direction: row; /* Change to row to make it horizontal */
+  max-width: 800px;
+  height: 200px;
+  flex-direction: row;
 }
 
 .recipe-image {
@@ -85,9 +85,9 @@ function toggleFavorite() {
 }
 
 .card.horizontal-layout .recipe-image {
-  width: 40%; /* Adjust the width to fit the new layout */
+  width: 40%;
   height: 100%;
-  margin-right: 20px; /* Add margin to separate image from content */
+  margin-right: 20px;
 }
 
 .card-content {
@@ -98,7 +98,7 @@ function toggleFavorite() {
 }
 
 .card.horizontal-layout .card-content {
-  width: 60%; /* Adjust the width to fit the new layout */
+  width: 60%;
   height: 100%;
 }
 
@@ -157,19 +157,21 @@ function toggleFavorite() {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  backdrop-filter: blur(5px); /* Frostad effekt */
-  background-color: rgba(255, 255, 255, 0.5); /* Ljus bakgrund för tydlighet */
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .favorite-button:hover {
-  background-color: rgba(255, 255, 255, 0.8); /* Ljusare bakgrund vid hover */
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
+/* Set a default color for the unclicked heart icon */
 .favorite-button .fa-heart-o {
-  color: grey; /* Set a default color for the unclicked heart icon */
+  color: grey;
 }
 
+/* Set the color for the clicked heart icon */
 .favorite-button .fa-heart {
-  color: red; /* Set the color for the clicked heart icon */
+  color: red;
 }
 </style>
