@@ -71,4 +71,7 @@ const setHover = (rating) => {
 .star.hovered {
   color: orange;
 }
+.wis {
+  color: red;
+}
 </style>
