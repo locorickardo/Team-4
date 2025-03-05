@@ -10,7 +10,7 @@
         <div class="line-break"></div>
         <div class="recipe-info">
           <div class="recipe-rating">
-            <StarRating v-model="rating" />
+            <StarRating v-model="rating" :cardId="title" />
           </div>
           <div class="recipe-time-container">
             <i class="fas fa-clock"></i>

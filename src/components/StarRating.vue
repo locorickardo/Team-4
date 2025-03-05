@@ -18,10 +18,14 @@
 import { ref, onMounted, watch } from 'vue'
 
 const props = defineProps({
-  modelValue: Number, // v-model support
+  modelValue: Number,
   maxStars: {
     type: Number,
     default: 5,
+  },
+  cardId: {
+    type: String,
+    required: true,
   },
 })
 
@@ -31,17 +35,15 @@ const currentRating = ref(0)
 const hoverRating = ref(0)
 const stars = ref([...Array(props.maxStars).keys()].map((i) => i + 1))
 
-// Load rating from localStorage when component mounts
 onMounted(() => {
-  const savedRating = localStorage.getItem('starRating')
+  const savedRating = localStorage.getItem(`starRating-${props.cardId}`)
   if (savedRating) {
     currentRating.value = parseInt(savedRating, 10)
   }
 })
 
-// Update localStorage when rating changes
 watch(currentRating, (newRating) => {
-  localStorage.setItem('starRating', newRating)
+  localStorage.setItem(`starRating-${props.cardId}`, newRating)
 })
 
 const setRating = (rating) => {
