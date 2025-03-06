@@ -4,6 +4,7 @@
     <div class="card-content">
       <h6 class="recipe-title">{{ title }}</h6>
       <div class="line-break"></div>
+      <p class="recipe-description">{{ description }}</p>
       <div class="info-section">
         <div class="recipe-rating">★★★★★</div>
         <div class="recipe-info">
@@ -27,6 +28,10 @@ const props = defineProps({
     type: String,
     default: 'Recipe Title',
   },
+  description: {
+    type: String,
+    default: 'Ingen beskrivning',
+  },
   time: {
     type: String,
     default: '25',
@@ -37,12 +42,11 @@ const props = defineProps({
   },
   layout: {
     type: String,
-    default: 'vertical', // Default layout is vertical
+    default: 'vertical',
   },
 })
 
 const favoritesStore = useFavoritesStore()
-
 const isFavorite = computed(() => favoritesStore.isFavorite(props.title))
 
 function toggleFavorite() {
@@ -105,7 +109,13 @@ function toggleFavorite() {
 .recipe-title {
   font-size: 18px;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+}
+
+.recipe-description {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: auto;
 }
 
 .line-break {
@@ -116,14 +126,13 @@ function toggleFavorite() {
 
 .info-section {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
 }
 
 .recipe-rating {
   color: gold;
-  margin-bottom: 0px;
 }
 
 .recipe-info {
@@ -139,7 +148,6 @@ function toggleFavorite() {
 .recipe-time {
   font-size: 14px;
   color: #666;
-  margin-left: auto;
 }
 
 .favorite-button {
@@ -165,12 +173,10 @@ function toggleFavorite() {
   background-color: rgba(255, 255, 255, 0.8);
 }
 
-/* Set a default color for the unclicked heart icon */
 .favorite-button .fa-heart-o {
   color: grey;
 }
 
-/* Set the color for the clicked heart icon */
 .favorite-button .fa-heart {
   color: red;
 }
