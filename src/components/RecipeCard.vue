@@ -4,7 +4,6 @@
     <div class="card-content">
       <h6 class="recipe-title">{{ title }}</h6>
       <div class="line-break"></div>
-      <p class="recipe-description">{{ description }}</p>
       <div class="info-section">
         <div class="recipe-rating">★★★★★</div>
         <div class="recipe-info">
