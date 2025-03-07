@@ -1,9 +1,9 @@
 [
   {
     "id": 1,
-    "name": "Pannkakor1",
+    "name": "Pannkakor",
     "description": "Frasiga nystekta pannkakor är alltid underbart gott! Här är ett enkelt grundrecept på tunna pannkakor. Välj om du vill servera dem som dessert med med sylt, lättvispad grädde, eller kvarg.",
-    "image": "https://villalivet.se/wp-content/uploads/2020/02/pancakes-2291908_1280-1024x644.jpg",
+    "image": "Placeholder_1.jpeg",
     "time": "30 min",
     "portions": "4",
     "ingredients": [
@@ -24,7 +24,7 @@
     "id": 2,
     "name": "Lax i ugn med teriyaki",
     "description": "Lax i ugn sköter sig nästan själv och blir väldigt saftig och god. Här får en teriyakimarinad stå för smaken samt härliga sesamfrön. De gör ju att maten ser så mycket godare ut, eller hur? ",
-    "image": "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_243201/cf_259/lax_i_ugn_med_teriyaki.jpg",
+    "image": "Placeholder_2.jpeg",
     "time": "30 min",
     "portions": "4",
     "ingredients": [
@@ -46,9 +46,9 @@
   },
   {
     "id": 3,
-    "name": "Kotlett med gräddsås och potatis",
+    "name": "Kotlett och potatis",
     "description": "Saftiga fläskkotletter med en krämig gräddsås och kokt potatis.",
-    "image": "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_177818/cf_259/tunn_kotlett_med_graddsas.jpg",
+    "image": "Placeholder_3.jpeg",
     "time": "40 min",
     "portions": "4",
     "ingredients": [
@@ -72,7 +72,7 @@
     "id": 4,
     "name": "Vit Champinjonpizza",
     "description": "En krämig vit pizza med champinjoner och mozzarella.",
-    "image": "vit_champinjonpizza.jpg",
+    "image": "Placeholder_4.jpeg",
     "time": "30 min",
     "portions": "4",
     "ingredients": [
@@ -100,7 +100,7 @@
     "id": 5,
     "name": "BLT Sandwich",
     "description": "En klassisk bacon, sallad och tomatmacka.",
-    "image": "blt.jpg",
+    "image": "Placeholder_5.jpeg",
     "time": "15 min",
     "portions": "4",
     "ingredients": [
@@ -122,7 +122,7 @@
     "id": 6,
     "name": "Våfflor",
     "description": "Frasiga våfflor perfekta med sylt och grädde.",
-    "image": "vafflor.jpg",
+    "image": "Placeholder_6.jpeg",
     "time": "30 min",
     "portions": "4",
     "ingredients": [
@@ -144,7 +144,7 @@
     "id": 7,
     "name": "Ravioli med tomatsås",
     "description": "Fylld pasta i en smakrik tomatsås.",
-    "image": "ravioli.jpg",
+    "image": "Placeholder_7.jpeg",
     "time": "25 min",
     "portions": "4",
     "ingredients": [
@@ -167,7 +167,7 @@
     "id": 8,
     "name": "Spaghetti med köttfärssås",
     "description": "En klassisk och enkel köttfärssås med spaghetti.",
-    "image": "spaghetti_kottfarssas.jpg",
+    "image": "Placeholder_8.jpeg",
     "time": "35 min",
     "portions": "4",
     "ingredients": [
