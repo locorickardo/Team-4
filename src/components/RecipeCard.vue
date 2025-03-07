@@ -3,12 +3,12 @@
     <img :src="image" alt="Recipe Image" class="recipe-image" />
     <div class="card-content">
       <h6 class="recipe-title">{{ title }}</h6>
-
       <div class="spacer"></div>
       <div class="line-break"></div>
-
       <div class="info-section">
-        <div class="recipe-rating">★★★★★</div>
+        <div class="recipe-rating">
+          <StarRating v-model="rating" :cardId="title" />
+        </div>
         <div class="recipe-info">
           <i class="fas fa-clock"></i>
           <span class="recipe-time">{{ time }} min</span>
@@ -24,6 +24,9 @@
 <script setup>
 import { computed } from 'vue'
 import { useFavoritesStore } from '@/stores/favorites'
+import { ref } from 'vue'
+import StarRating from './StarRating.vue'
+const rating = ref(0)
 
 const props = defineProps({
   title: {
