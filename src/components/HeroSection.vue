@@ -42,9 +42,16 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
+      <div class="carousel-button">
+        <RouterLink to="/recept" class="btn btn-primary">Till våra populära recept</RouterLink>
+      </div>
     </div>
   </div>
 </template>
+
+<script setup>
+import { RouterLink } from 'vue-router'
+</script>
 
 <style scoped>
 .carousel-wrapper {
@@ -52,6 +59,7 @@
   justify-content: center;
   align-items: center;
   height: 80vh;
+  position: relative;
 }
 
 .carousel-inner {
@@ -62,5 +70,27 @@
 .carousel-item img {
   width: 100%;
   margin: 0 auto;
+}
+
+.carousel-button {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.carousel-button .btn {
+  background-color: #000000;
+  border: none;
+  padding: 12px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.carousel-button .btn:hover {
+  background-color: #e66900;
 }
 </style>

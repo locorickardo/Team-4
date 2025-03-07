@@ -30,7 +30,7 @@ import { useRecipeStore } from '@/stores/useRecipeStore'
 import StarRating from './StarRating.vue'
 
 const props = defineProps({
-  title: String, // The recipe title to find
+  title: String,
   layout: { type: String, default: 'vertical' }
 })
 

@@ -35,7 +35,7 @@
 <script setup>
 import { onMounted } from 'vue'
 import { useRoute } from 'vue-router'
-import 'bootstrap/dist/js/bootstrap.bundle.min.js' // Ensure Bootstrap JS is available
+import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 
 const route = useRoute()
 
@@ -46,7 +46,6 @@ function closeNavbar() {
   }
 }
 
-// Close navbar when clicking a link
 onMounted(() => {
   document.querySelectorAll('.nav-link').forEach(link => {
     link.addEventListener('click', closeNavbar)

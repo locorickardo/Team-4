@@ -7,7 +7,7 @@ import { useRecipeStore } from '@/stores/useRecipeStore'
 const { recipes, fetchRecipes } = useRecipeStore()
 
 onMounted(() => {
-  fetchRecipes() // Ensure recipes are loaded
+  fetchRecipes()
 })
 </script>
 
