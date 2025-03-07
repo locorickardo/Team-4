@@ -5,11 +5,12 @@
       <h6 class="recipe-title">{{ title }}</h6>
       <div class="spacer"></div>
       <div class="line-break"></div>
+
       <div class="info-section">
         <div class="recipe-rating">
           <StarRating v-model="rating" :cardId="title" />
         </div>
-        <div class="recipe-info">
+        <div class="recipe-time-container">
           <i class="fas fa-clock"></i>
           <span class="recipe-time">{{ time }} min</span>
         </div>
@@ -67,11 +68,10 @@ function toggleFavorite() {
 .card {
   width: 100%;
   max-width: 284px;
-  height: 381px;
+  height: fit-content;
   border-radius: 12px;
   background-color: rgba(248, 248, 248, 0.8);
   backdrop-filter: blur(10px);
-  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -87,10 +87,9 @@ function toggleFavorite() {
 
 .recipe-image {
   width: 100%;
-  height: 50%;
+  height: 20vh;
   object-fit: cover;
   border-radius: 8px;
-  margin-bottom: 10px;
 }
 
 .card.horizontal-layout .recipe-image {
@@ -104,6 +103,7 @@ function toggleFavorite() {
   flex-direction: column;
   justify-content: flex-start;
   height: 50%;
+  padding: 20px;
 }
 
 .card.horizontal-layout .card-content {
@@ -135,13 +135,21 @@ function toggleFavorite() {
 
 .info-section {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  align-items: left;
   margin-top: auto;
 }
 
 .recipe-rating {
   color: gold;
+  margin-bottom: 5px;
+}
+
+.recipe-time-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: black;
 }
 
 .recipe-info {

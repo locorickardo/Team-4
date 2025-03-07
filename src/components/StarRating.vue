@@ -59,14 +59,10 @@ const setHover = (rating) => {
 }
 
 .star.filled {
-    color: gold;
-}
-
-.star.hovered {
     color: orange;
 }
-
-.wis {
-    color: red;
+/* ändra i framtiden (aldrig) */
+.star.hovered {
+    color: orange;
 }
 </style>
