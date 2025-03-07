@@ -3,7 +3,7 @@
     "id": 1,
     "name": "Pannkakor",
     "description": "Frasiga nystekta pannkakor är alltid underbart gott! Här är ett enkelt grundrecept på tunna pannkakor. Välj om du vill servera dem som dessert med med sylt, lättvispad grädde, eller kvarg.",
-    "image": "Placeholder_1.jpeg",
+    "image": "pancakes.jpeg",
     "time": "30 min",
     "portions": "4",
     "ingredients": [
@@ -24,7 +24,7 @@
     "id": 2,
     "name": "Lax i ugn med teriyaki",
     "description": "Lax i ugn sköter sig nästan själv och blir väldigt saftig och god. Här får en teriyakimarinad stå för smaken samt härliga sesamfrön. De gör ju att maten ser så mycket godare ut, eller hur? ",
-    "image": "Placeholder_2.jpeg",
+    "image": "salmon.jpeg",
     "time": "30 min",
     "portions": "4",
     "ingredients": [
@@ -48,7 +48,7 @@
     "id": 3,
     "name": "Kotlett och potatis",
     "description": "Saftiga fläskkotletter med en krämig gräddsås och kokt potatis.",
-    "image": "Placeholder_3.jpeg",
+    "image": "kotlett.jpeg",
     "time": "40 min",
     "portions": "4",
     "ingredients": [
@@ -72,7 +72,7 @@
     "id": 4,
     "name": "Vit Champinjonpizza",
     "description": "En krämig vit pizza med champinjoner och mozzarella.",
-    "image": "Placeholder_4.jpeg",
+    "image": "pizza.jpeg",
     "time": "30 min",
     "portions": "4",
     "ingredients": [
@@ -100,7 +100,7 @@
     "id": 5,
     "name": "BLT Sandwich",
     "description": "En klassisk bacon, sallad och tomatmacka.",
-    "image": "Placeholder_5.jpeg",
+    "image": "blt.jpeg",
     "time": "15 min",
     "portions": "4",
     "ingredients": [
@@ -122,7 +122,7 @@
     "id": 6,
     "name": "Våfflor",
     "description": "Frasiga våfflor perfekta med sylt och grädde.",
-    "image": "Placeholder_6.jpeg",
+    "image": "waffles.jpeg",
     "time": "30 min",
     "portions": "4",
     "ingredients": [
@@ -144,7 +144,7 @@
     "id": 7,
     "name": "Ravioli med tomatsås",
     "description": "Fylld pasta i en smakrik tomatsås.",
-    "image": "Placeholder_7.jpeg",
+    "image": "ravioli.jpeg",
     "time": "25 min",
     "portions": "4",
     "ingredients": [
@@ -167,7 +167,7 @@
     "id": 8,
     "name": "Spaghetti med köttfärssås",
     "description": "En klassisk och enkel köttfärssås med spaghetti.",
-    "image": "Placeholder_8.jpeg",
+    "image": "spaghetti.jpeg",
     "time": "35 min",
     "portions": "4",
     "ingredients": [
