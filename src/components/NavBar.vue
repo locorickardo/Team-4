@@ -35,5 +35,9 @@
     </div>
   </nav>
 </template>
-<style></style>
+<style>
+.navbar {
+  background-color: #f4f0e8 !important;
+}
+</style>
 <script setup></script>
