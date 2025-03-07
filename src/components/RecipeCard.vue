@@ -3,7 +3,10 @@
     <img :src="image" alt="Recipe Image" class="recipe-image" />
     <div class="card-content">
       <h6 class="recipe-title">{{ title }}</h6>
+
+      <div class="spacer"></div>
       <div class="line-break"></div>
+
       <div class="info-section">
         <div class="recipe-rating">★★★★★</div>
         <div class="recipe-info">
@@ -115,6 +118,10 @@ function toggleFavorite() {
   font-size: 14px;
   color: #555;
   margin-bottom: auto;
+}
+
+.spacer {
+  flex-grow: 1;
 }
 
 .line-break {
