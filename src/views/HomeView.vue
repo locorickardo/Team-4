@@ -1,23 +1,26 @@
 <script setup>
+import { computed, ref, onMounted } from 'vue'
 import HeroSection from '@/components/HeroSection.vue'
 import RecipeCard from '@/components/RecipeCard.vue'
+import { useRecipeStore } from '@/stores/useRecipeStore'
 
-const images = [
-  '../src/assets/img/Placeholder_1.jpeg',
-  '../src/assets/img/Placeholder_2.jpeg',
-  '../src/assets/img/Placeholder_3.jpeg',
-  '../src/assets/img/Placeholder_4.jpeg',
-  '../src/assets/img/Placeholder_5.jpeg',
-  '../src/assets/img/Placeholder_6.jpeg',
-  '../src/assets/img/Placeholder_7.jpeg',
-  '../src/assets/img/Placeholder_8.jpeg',
-];
+const { recipes, fetchRecipes } = useRecipeStore()
+
+onMounted(() => {
+  fetchRecipes()
+})
 </script>
+
 <template>
   <HeroSection />
   <div class="card-grid">
-    <RecipeCard v-for="(image, index) in images" :key="index" :title="'Recipe ' + (index + 1)" :time="'25'"
-      :image="image" />
+    <RecipeCard
+      v-for="recipe in recipes"
+      :key="recipe.id"
+      :title="recipe.name"
+      :time="recipe.time"
+      :image="recipe.image"
+    />
   </div>
 </template>
 
@@ -35,6 +38,14 @@ const images = [
 .card {
   width: 100%;
   max-width: 284px;
+}
+
+::v-deep .recipe-image {
+  border-radius: 8px 8px 0 0;
+}
+
+::v-deep .card-description {
+  display: none;
 }
 
 @media (max-width: 768px) {

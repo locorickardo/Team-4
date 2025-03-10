@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 /* Bootstrap JavaScript (e.g. modal, tooltips, etc)
 Den här behövs för att JavaScript ska fungera i Bootstrap */
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'
+import '@fortawesome/fontawesome-free/css/all.css'
 
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'

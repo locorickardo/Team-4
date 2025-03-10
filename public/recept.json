@@ -1,0 +1,190 @@
+[
+  {
+    "id": 1,
+    "name": "Pannkakor",
+    "description": "Klassiska tunna pannkakor, perfekta med sylt och grädde eller en klick smör och socker.",
+    "image": "pancakes.jpeg",
+    "time": "30 min",
+    "portions": "4",
+    "ingredients": [
+      { "name": "vetemjöl", "quantity": "3 dl" },
+      { "name": "mjölk", "quantity": "6 dl" },
+      { "name": "ägg", "quantity": "3" },
+      { "name": "salt", "quantity": "0,5 tsk" },
+      { "name": "smör", "quantity": "till stekning" }
+    ],
+    "instructions": [
+      "Vispa ut mjölet i hälften av mjölken till en slät smet. Vispa i resterande mjölk, ägg och salt. ",
+      "Låt pannkakssmeten svälla ca 10 min så håller pannkakorna håller ihop bättre.",
+      "Hetta upp smör i en stekpanna. Värm först upp pannan på hög värme så pannan blir riktigt varm. Häll ner smet och stek tunna fina pannakor. Vänd pannkakan när brandlarmet går.",
+      "Toppa med sylt, bär eller vispgrädde och servera."
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Lax i ugn med teriyaki",
+    "description": "Saftig lax med en smakrik teriyakisås, serverad med ris och krispiga grönsaker.",
+    "image": "salmon.jpeg",
+    "time": "30 min",
+    "portions": "4",
+    "ingredients": [
+      { "name": "laxfilé", "quantity": "500 g" },
+      { "name": "teriyakysås", "quantity": "150 ml" },
+      { "name": "sesamfrö", "quantity": "2 msk" },
+      { "name": "ris", "quantity": "" },
+      { "name": "risharicots verts", "quantity": "600 g" }
+    ],
+    "instructions": [
+      "Tina laxen.",
+      "Sätt ugnen på 175°C.",
+      "Lägg laxen i en ugnsform och häll 1/2 msk teriyaki över varje bit lax. Strö över sesamfröna.",
+      "Sätt in formen mitt i ugnen ca 12 minuter eller tills laxen har en innertemperatur på 54°C.",
+      "Koka riset enligt anvisningen på förpackningen.",
+      "Koka bönorna enligt anvisningen på förpackningen.",
+      "Servera laxen med ris, bönor och resten av teriyakisåsen."
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Kotlett och potatis",
+    "description": "Saftiga fläskkotletter med en krämig gräddsås och kokt potatis.",
+    "image": "kotlett.jpeg",
+    "time": "40 min",
+    "portions": "4",
+    "ingredients": [
+      { "name": "Fläskkotletter", "quantity": "4 st" },
+      { "name": "Smör", "quantity": "2 msk" },
+      { "name": "Salt", "quantity": "efter smak" },
+      { "name": "Svartpeppar", "quantity": "efter smak" },
+      { "name": "Grädde", "quantity": "3 dl" },
+      { "name": "Köttbuljong", "quantity": "1 tärning" },
+      { "name": "Potatis", "quantity": "800 g" }
+    ],
+    "instructions": [
+      "Krydda kotletterna med salt och peppar.",
+      "Stek i smör på medelhög värme tills de får fin färg.",
+      "Häll i grädde och smula ner buljongtärningen, låt sjuda i 10 minuter.",
+      "Koka potatisen tills den är mjuk.",
+      "Servera kotletterna med sås och potatis."
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Vit Champinjonpizza",
+    "description": "En krämig vit pizza med champinjoner och mozzarella.",
+    "image": "pizza.jpeg",
+    "time": "30 min",
+    "portions": "4",
+    "ingredients": [
+      { "name": "Pizzadeg", "quantity": "1 st" },
+      { "name": "Crème fraiche", "quantity": "1,5 dl" },
+      { "name": "Mozzarella", "quantity": "200 g" },
+      { "name": "Champinjoner", "quantity": "150 g" },
+      { "name": "Vitlök", "quantity": "1 klyfta" },
+      { "name": "Olivolja", "quantity": "1 msk" },
+      { "name": "Oregano", "quantity": "1 tsk" },
+      { "name": "Salt", "quantity": "efter smak" },
+      { "name": "Svartpeppar", "quantity": "efter smak" }
+    ],
+    "instructions": [
+      "Sätt ugnen på 225°C.",
+      "Blanda crème fraiche med pressad vitlök, salt och peppar.",
+      "Bred ut crème fraiche-blandningen över pizzadegen.",
+      "Skiva champinjonerna och fördela dem jämnt över pizzan.",
+      "Strö över mozzarella och oregano.",
+      "Grädda i ugnen i cirka 12–15 minuter.",
+      "Ringla över olivolja och servera."
+    ]
+  },
+  {
+    "id": 5,
+    "name": "BLT Sandwich",
+    "description": "En klassisk bacon, sallad och tomatmacka.",
+    "image": "blt.jpeg",
+    "time": "15 min",
+    "portions": "4",
+    "ingredients": [
+      { "name": "Brödskivor", "quantity": "8 st" },
+      { "name": "Bacon", "quantity": "8 skivor" },
+      { "name": "Tomat", "quantity": "2 st" },
+      { "name": "Romansallad", "quantity": "4 blad" },
+      { "name": "Majonnäs", "quantity": "4 msk" }
+    ],
+    "instructions": [
+      "Stek baconet knaprigt och låt rinna av på hushållspapper.",
+      "Rosta brödskivorna.",
+      "Bred majonnäs på brödet.",
+      "Lägg på sallad, tomatskivor och bacon.",
+      "Toppa med en skiva bröd och servera."
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Våfflor",
+    "description": "Frasiga våfflor perfekta med sylt och grädde.",
+    "image": "waffles.jpeg",
+    "time": "30 min",
+    "portions": "4",
+    "ingredients": [
+      { "name": "Vetemjöl", "quantity": "3 dl" },
+      { "name": "Mjölk", "quantity": "3 dl" },
+      { "name": "Ägg", "quantity": "2 st" },
+      { "name": "Smör", "quantity": "100 g" },
+      { "name": "Bakpulver", "quantity": "1 tsk" }
+    ],
+    "instructions": [
+      "Smält smöret och låt det svalna.",
+      "Vispa ihop mjöl, bakpulver, mjölk och ägg till en slät smet.",
+      "Tillsätt smöret och låt smeten vila i 10 minuter.",
+      "Värm våffeljärnet och grädda våfflorna gyllenbruna.",
+      "Servera med sylt och grädde."
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Ravioli med tomatsås",
+    "description": "Fylld pasta i en smakrik tomatsås.",
+    "image": "ravioli.jpeg",
+    "time": "25 min",
+    "portions": "4",
+    "ingredients": [
+      { "name": "Färsk ravioli", "quantity": "500 g" },
+      { "name": "Krossade tomater", "quantity": "400 g" },
+      { "name": "Vitlök", "quantity": "2 klyftor" },
+      { "name": "Olivolja", "quantity": "2 msk" },
+      { "name": "Basilika", "quantity": "1 knippe" },
+      { "name": "Parmesan", "quantity": "50 g" }
+    ],
+    "instructions": [
+      "Fräs hackad vitlök i olivolja.",
+      "Tillsätt krossade tomater och låt sjuda i 10 minuter.",
+      "Koka raviolin enligt anvisningarna på förpackningen.",
+      "Blanda raviolin med tomatsåsen.",
+      "Toppa med färsk basilika och riven parmesan."
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Spaghetti med köttfärssås",
+    "description": "En klassisk och enkel köttfärssås med spaghetti.",
+    "image": "spaghetti.jpeg",
+    "time": "35 min",
+    "portions": "4",
+    "ingredients": [
+      { "name": "Spaghetti", "quantity": "400 g" },
+      { "name": "Nötfärs", "quantity": "500 g" },
+      { "name": "Krossade tomater", "quantity": "400 g" },
+      { "name": "Gul lök", "quantity": "1 st" },
+      { "name": "Vitlök", "quantity": "2 klyftor" },
+      { "name": "Oregano", "quantity": "1 tsk" },
+      { "name": "Olivolja", "quantity": "2 msk" }
+    ],
+    "instructions": [
+      "Hacka lök och vitlök och fräs i olivolja.",
+      "Tillsätt nötfärsen och bryn tills den är genomstekt.",
+      "Häll i krossade tomater och oregano, låt sjuda i 20 minuter.",
+      "Koka spaghettin enligt anvisningarna på förpackningen.",
+      "Servera köttfärssåsen med pastan."
+    ]
+  }
+]
