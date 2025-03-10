@@ -27,7 +27,7 @@ function getImagePath(index) {
 <style scoped>
 h1 {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 6rem;
 }
 .card-list {
   display: flex;
@@ -37,5 +37,8 @@ h1 {
   max-width: 1200px;
   margin: 0 auto;
   align-items: center;
+}
+:deep .recipe-image {
+  border-radius: 8px 0 0 8px;
 }
 </style>

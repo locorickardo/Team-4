@@ -24,7 +24,9 @@
             <RouterLink class="nav-link" to="/recept" @click="closeNavbar">Recept</RouterLink>
           </li>
           <li class="nav-item">
-            <RouterLink class="nav-link" to="/favoriter" @click="closeNavbar">Mina Favoriter</RouterLink>
+            <RouterLink class="nav-link" to="/favoriter" @click="closeNavbar"
+              >Mina Favoriter</RouterLink
+            >
           </li>
         </ul>
       </div>
@@ -47,7 +49,7 @@ function closeNavbar() {
 }
 
 onMounted(() => {
-  document.querySelectorAll('.nav-link').forEach(link => {
+  document.querySelectorAll('.nav-link').forEach((link) => {
     link.addEventListener('click', closeNavbar)
   })
 })
@@ -56,5 +58,10 @@ onMounted(() => {
 <style>
 .navbar {
   background-color: #f4f0e8 !important;
+}
+/* fixa till mindre skärmstorlekar */
+.logo {
+  scale: 2;
+  transform: translateX(2rem) translateY(0.5rem);
 }
 </style>

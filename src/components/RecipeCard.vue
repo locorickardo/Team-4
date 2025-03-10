@@ -2,7 +2,10 @@
   <div v-if="recipe" :class="['card', { 'horizontal-layout': layout === 'horizontal' }]">
     <img :src="getImageUrl(recipe.image)" alt="Recipe Image" class="recipe-image" />
     <div class="card-content">
-      <h6 class="recipe-title">{{ recipe.name }}</h6>
+      <RouterLink class="router-link" :to="'/' + encodeURIComponent(recipe.name)"
+        ><h6 class="recipe-title">{{ recipe.name }}</h6></RouterLink
+      >
+      <div class="card-description">{{ recipe.description }}</div>
       <div class="spacer"></div>
       <div class="line-break"></div>
 
@@ -20,7 +23,6 @@
       </button>
     </div>
   </div>
-
 </template>
 
 <script setup>
@@ -31,7 +33,7 @@ import StarRating from './StarRating.vue'
 
 const props = defineProps({
   title: String,
-  layout: { type: String, default: 'vertical' }
+  layout: { type: String, default: 'vertical' },
 })
 
 const { recipes, fetchRecipes, getRecipeByTitle } = useRecipeStore()
@@ -72,7 +74,7 @@ function toggleFavorite() {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 5px 10px #a998762c;
   position: relative;
 }
 
@@ -193,5 +195,9 @@ function toggleFavorite() {
 
 .favorite-button .fa-heart {
   color: red;
+}
+.router-link {
+  text-decoration: none;
+  color: black;
 }
 </style>

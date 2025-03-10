@@ -40,6 +40,14 @@ onMounted(() => {
   max-width: 284px;
 }
 
+::v-deep .recipe-image {
+  border-radius: 8px 8px 0 0;
+}
+
+::v-deep .card-description {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .card-grid {
     grid-template-columns: repeat(2, 1fr);

@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Pannkakor",
-    "description": "Frasiga nystekta pannkakor är alltid underbart gott! Här är ett enkelt grundrecept på tunna pannkakor. Välj om du vill servera dem som dessert med med sylt, lättvispad grädde, eller kvarg.",
+    "description": "Klassiska tunna pannkakor, perfekta med sylt och grädde eller en klick smör och socker.",
     "image": "pancakes.jpeg",
     "time": "30 min",
     "portions": "4",
@@ -23,7 +23,7 @@
   {
     "id": 2,
     "name": "Lax i ugn med teriyaki",
-    "description": "Lax i ugn sköter sig nästan själv och blir väldigt saftig och god. Här får en teriyakimarinad stå för smaken samt härliga sesamfrön. De gör ju att maten ser så mycket godare ut, eller hur? ",
+    "description": "Saftig lax med en smakrik teriyakisås, serverad med ris och krispiga grönsaker.",
     "image": "salmon.jpeg",
     "time": "30 min",
     "portions": "4",

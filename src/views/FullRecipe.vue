@@ -1,6 +1,6 @@
 <script setup>
 import { ref, onMounted, computed } from 'vue'
-import RecipeCard from '@/components/RecipeCard.vue'
+import FullRecipeSection from '@/components/FullRecipeSection.vue'
 
 const recipes = ref([])
 const recipesPerPage = 8
@@ -28,34 +28,8 @@ onMounted(async () => {
 </script>
 
 <template>
-  <h1>Alla Recept</h1>
-  <div v-if="recipes.length === 0">Inga recept tillgängliga</div>
   <div class="card-list">
-    <RecipeCard
-      v-for="(recipe, index) in recipes.slice(
-        (currentPage - 1) * recipesPerPage,
-        currentPage * recipesPerPage,
-      )"
-      :key="recipe.id"
-      :title="recipe.name || 'Unnamed Recipe'"
-      :description="recipe.description || 'Ingen beskrivning'"
-      :time="recipe.time.total || '25'"
-      :image="getImagePath(index)"
-      layout="horizontal"
-    />
-  </div>
-
-  <div class="pagination">
-    <button @click="goToPage(currentPage - 1)" :disabled="currentPage === 1">❮</button>
-    <button
-      v-for="page in totalPages"
-      :key="page"
-      :class="{ active: page === currentPage }"
-      @click="goToPage(page)"
-    >
-      {{ page }}
-    </button>
-    <button @click="goToPage(currentPage + 1)" :disabled="currentPage === totalPages">❯</button>
+    <FullRecipeSection />
   </div>
 </template>
 
@@ -107,7 +81,7 @@ h1 {
   cursor: not-allowed;
 }
 
-:deep .recipe-image {
+::v-deep .recipe-image {
   border-radius: 8px 0 0 8px;
 }
 </style>
